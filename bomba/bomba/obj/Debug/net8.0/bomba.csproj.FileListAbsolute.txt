@@ -1,0 +1,15 @@
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\bin\Debug\net8.0\bomba.exe
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\bin\Debug\net8.0\bomba.deps.json
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\bin\Debug\net8.0\bomba.runtimeconfig.json
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\bin\Debug\net8.0\bomba.dll
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\bin\Debug\net8.0\bomba.pdb
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\bomba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\bomba.AssemblyInfoInputs.cache
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\bomba.AssemblyInfo.cs
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\bomba.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\bomba.sourcelink.json
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\bomba.dll
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\refint\bomba.dll
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\bomba.pdb
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\bomba.genruntimeconfig.cache
+C:\Users\Alunos\OneDrive\Documentos\GitTheo\Bombadagua\bomba\bomba\obj\Debug\net8.0\ref\bomba.dll
