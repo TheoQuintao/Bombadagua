@@ -13,7 +13,8 @@ O programa principal está em [`Program.cs`](bomba/bomba/Program.cs). Ele simula
 - Sensores virtuais: `sa`, `sb`, `sc` (ligados/desligados conforme o nível de água).
 - Atuadores: `bomba` (liga/desliga a bomba), `torneira` (liga/desliga a torneira).
 
-### Lógica dos sensores e atuadores
+### Lógica dos sensores e atuadores!
+
 
 - O nível da caixa d'água diminui a cada ciclo.
 - Se o reservatório está abaixo de 30%, ambos sensores `sa` e `sb` desligam.
@@ -31,6 +32,8 @@ O programa principal está em [`Program.cs`](bomba/bomba/Program.cs). Ele simula
 ### Saída
 
 O programa exibe no console o status dos sensores, da bomba, da torneira, e os níveis de água, atualizando a cada ciclo.
+
+[Design sem nome](https://github.com/user-attachments/assets/9b222d23-b33c-4390-bb93-983aecfa0c8f)
 
 ---
 
