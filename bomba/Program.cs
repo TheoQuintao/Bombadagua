@@ -1,4 +1,9 @@
-﻿int caixa = 50,
+﻿using Classes;
+
+
+
+
+int caixa = 50,
     reservatorio = 50;
 
 bool bomba = false,
