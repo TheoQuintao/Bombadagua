@@ -2,10 +2,9 @@ namespace Layout
 {
     class Formatação
     {
-        public static void Cor(ConsoleColor Letra, ConsoleColor Fundo)
+        public static void Cor(ConsoleColor Letra)
         {
             Console.ForegroundColor = Letra;  
-            Console.BackgroundColor = Fundo;
         }
         public static void ImprimirCabecalho(string txt)
         {

@@ -1,140 +1,123 @@
 ﻿using Classes;
+using Layout;
 
+Torneira.Vazao = 4;
+Bomba.Vazao = 3;
+Caixa.NivelAtual = 100;
+Reservatorio.NivelAtual = 100;
+Caixa.Saida = 2;
 
+string txt = "Sistema de Controle de Nível de Água";
 
-
-int caixa = 50,
-    reservatorio = 50;
-
-bool bomba = false,
-    torneira = false,
-    sa = false,
-    sb = false,
-    sc = false,
-    erro = false;
-    
-
-while(true)
+while (true)
 {
-    caixa-=2;
-    Console.WriteLine($"Caixa d'água: {caixa}%");
-    Console.WriteLine($"Reservatorio: {reservatorio}%\n\n");
-    if(reservatorio<30)
-    {
-        sa = false;
-        sb = false;
-    }
-    else if(reservatorio>30 && reservatorio<80)
-    {
-        sa = true;
-        sb = false;
-    }
-    else if(reservatorio>80)
-    {
-        sa = true;
-        sb = true;
-    }
-
-    if(caixa<80)
-    {
-        sc = false;
-    }
-    else if(caixa>80)
-    {
-        sc = true;
-    }
-
-    if(sa == false && sb == false)
-    {
-        torneira = true;
-    }
-    else if(sa == true && sb == true)
-    {
-        torneira = false;
-    }
-
-
-
-    if(erro == true)
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("O sistema deu ERRO!!!!");
-        break;
-    }
-
-    if(sa == true)
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("Sensor A: ligado");
-        Console.ResetColor();
-    }
-    else
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Sensor A: Desligado");
-        Console.ResetColor();
-    }
-
-    if(sb == true)
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("Sensor b: ligado");
-        Console.ResetColor();
-    }
-    else
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Sensor b: Desligado");
-        Console.ResetColor();
-    }
-
-    if(sc == true)
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("Sensor c: ligado");
-        Console.ResetColor();
-        bomba = false;
-    }
-    else
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Sensor c: Desligado");
-        Console.ResetColor();
-        bomba = true;
-    }
-
-    
-    Console.WriteLine();
-    if(torneira == true)
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-        reservatorio+=4;
-        Console.WriteLine("Torneira: ligada");
-        Console.ResetColor();
-    }
-    else
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Torneira: desligada");
-        Console.ResetColor();
-    }
-
-    if(bomba == true)
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-        reservatorio-=3;
-        caixa+=3;
-        Console.WriteLine("Bomba: ligada");
-        Console.ResetColor();
-    }
-    else
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Bomba: desligada");
-        Console.ResetColor();
-    }
-
-    Console.WriteLine("\nCurso: Tecnico de Informatica para a internet\nAluno: Théo Oliveira Quintão");
-    Thread.Sleep(750);
+    Thread.Sleep(1000);
     Console.Clear();
+    bool ? bombaEstado = Bomba.Estado(Caixa.SensorA, Caixa.SensorB);
+    bool ? torneiraEstado = Torneira.Estado(Reservatorio.SensorA, Reservatorio.SensorB);
+    Formatação.Cor(ConsoleColor.Yellow);
+    Formatação.ImprimirCabecalho(txt);
+    Formatação.Cor(ConsoleColor.White);
+
+    if (bombaEstado == true)
+    {
+        Console.WriteLine($"Caixa: {Caixa.NivelAtual} % ↑");
+    }else
+    {
+        Console.WriteLine($"Caixa: {Caixa.NivelAtual} % ↓");
+    }
+
+    if (torneiraEstado == true)
+    {
+        Console.WriteLine($"Reservatorio: {Reservatorio.NivelAtual} % ↑");
+    }
+    else
+    {
+        Console.WriteLine($"Reservatorio: {Reservatorio.NivelAtual} % ↓");
+    }
+
+    Caixa.NivelAtual -= Caixa.Saida;
+    if (bombaEstado == true)
+    {
+        Formatação.Cor(ConsoleColor.Green);
+        Console.WriteLine("Bomba Ligada");
+        Formatação.Cor(ConsoleColor.White);
+        Reservatorio.NivelAtual -= Bomba.Vazao;
+        Caixa.NivelAtual += Reservatorio.Saida;
+    }
+    else
+    {
+        Formatação.Cor(ConsoleColor.Red);
+        Console.WriteLine("Bomba Desligada");
+        Formatação.Cor(ConsoleColor.White);
+    }
+
+    if (torneiraEstado == true)
+    {
+        Formatação.Cor(ConsoleColor.Green);
+        Console.WriteLine("Torneira Ligada");
+        Formatação.Cor(ConsoleColor.White);
+        Reservatorio.NivelAtual += Torneira.Vazao;
+    }
+    else
+    {
+        Formatação.Cor(ConsoleColor.Red);
+        Console.WriteLine("Torneira Desligada");
+        Formatação.Cor(ConsoleColor.White);
+    }
+
+    if (Reservatorio.SensorA == true)
+    {
+        Formatação.Cor(ConsoleColor.Green);
+        Console.WriteLine("Sensor superior do reservatorio ligado");
+        Formatação.Cor(ConsoleColor.White);
+    }
+    else
+    {
+        Formatação.Cor(ConsoleColor.Red);
+        Console.WriteLine("Sensor superior do reservatorio desligado");
+        Formatação.Cor(ConsoleColor.White);
+    }
+
+    if (Reservatorio.SensorB == true)
+    {
+        Formatação.Cor(ConsoleColor.Green);
+        Console.WriteLine("Sensor inferior do reservatorio ligado");
+        Formatação.Cor(ConsoleColor.White);
+    }
+    else
+    {
+        Formatação.Cor(ConsoleColor.Red);
+        Console.WriteLine("Sensor inferior do reservatorio desligado");
+        Formatação.Cor(ConsoleColor.White);
+    }
+
+    if (Caixa.SensorA == true)
+    {
+        Formatação.Cor(ConsoleColor.Green);
+        Console.WriteLine("Sensor superior da caixa ligado");
+        Formatação.Cor(ConsoleColor.White);
+    }
+    else
+    {
+        Formatação.Cor(ConsoleColor.Red);
+        Console.WriteLine("Sensor superior da caixa desligado");
+        Formatação.Cor(ConsoleColor.White);
+    }
+
+    if (Caixa.SensorB == true)
+    {
+        Formatação.Cor(ConsoleColor.Green);
+        Console.WriteLine("Sensor inferior da caixa ligado");
+        Formatação.Cor(ConsoleColor.White);
+    }
+    else
+    {
+        Formatação.Cor(ConsoleColor.Red);
+        Console.WriteLine("Sensor inferior da caixa desligado");
+        Formatação.Cor(ConsoleColor.White);
+    }
 }
+
+
+
