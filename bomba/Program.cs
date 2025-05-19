@@ -21,22 +21,38 @@ while (true)
 
     if (bombaEstado == true)
     {
-        Console.WriteLine($"Caixa: {Caixa.NivelAtual} % ↑");
-    }else
+        Console.Write($"Caixa: {Caixa.NivelAtual} % ");
+        Formatação.Cor(ConsoleColor.Green);
+        Console.WriteLine("↑");
+        Formatação.Cor(ConsoleColor.White);
+    }
+    else
     {
-        Console.WriteLine($"Caixa: {Caixa.NivelAtual} % ↓");
+        Console.Write($"Caixa: {Caixa.NivelAtual} % ");
+        Formatação.Cor(ConsoleColor.Red);
+        Console.WriteLine("↓");
+        Formatação.Cor(ConsoleColor.White);
     }
 
     if (torneiraEstado == true)
     {
-        Console.WriteLine($"Reservatorio: {Reservatorio.NivelAtual} % ↑");
+        Console.Write($"Reservatorio: {Reservatorio.NivelAtual} % ");
+        Formatação.Cor(ConsoleColor.Green);
+        Console.WriteLine("↑");
+        Formatação.Cor(ConsoleColor.White);
     }
     else
     {
-        Console.WriteLine($"Reservatorio: {Reservatorio.NivelAtual} % ↓");
+        Console.Write($"Reservatorio: {Reservatorio.NivelAtual} % ");
+        Formatação.Cor(ConsoleColor.Red);
+        Console.WriteLine("↓");
+        Formatação.Cor(ConsoleColor.White);
     }
 
+    Console.WriteLine();
+
     Caixa.NivelAtual -= Caixa.Saida;
+
     if (bombaEstado == true)
     {
         Formatação.Cor(ConsoleColor.Green);
@@ -65,6 +81,8 @@ while (true)
         Console.WriteLine("Torneira Desligada");
         Formatação.Cor(ConsoleColor.White);
     }
+
+    Console.WriteLine();
 
     if (Reservatorio.SensorA == true)
     {
