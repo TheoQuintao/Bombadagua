@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bomba")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7605bf6df4a7426e824f026f77054b60182f651")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f99ea684b72370fae7e8ff8e228f1984074a8f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("bomba")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bomba")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alunos\\OneDrive\\Documentos\\GitTheo\\Bombadagua\\bomba\\bomba.csproj": {}
+    "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alunos\\OneDrive\\Documentos\\GitTheo\\Bombadagua\\bomba\\bomba.csproj": {
+    "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alunos\\OneDrive\\Documentos\\GitTheo\\Bombadagua\\bomba\\bomba.csproj",
+        "projectUniqueName": "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj",
         "projectName": "bomba",
-        "projectPath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\GitTheo\\Bombadagua\\bomba\\bomba.csproj",
+        "projectPath": "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj",
         "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\GitTheo\\Bombadagua\\bomba\\obj\\",
+        "outputPath": "D:\\João Paulo\\Bombadagua\\bomba\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
