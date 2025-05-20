@@ -1,4 +1,4 @@
-namespace Bomba.Models
+namespace Bomba_Name.Models
 {
     public class Media_Temp
     {
