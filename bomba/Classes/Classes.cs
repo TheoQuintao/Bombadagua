@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Classes
 {
-    public class Bomba
+    public class Bomba_Main
     {
         private static bool bombaLigada = false;
         public static bool? Estado(bool sensorA, bool sensorB)
@@ -56,7 +56,7 @@ namespace Classes
 
         public static bool SensorB => NivelAtual > 30;
         public static bool SensorA => NivelAtual > 80;
-        public static double Saida => Bomba.Vazao;
+        public static double Saida => Bomba_Main.Vazao;
         public static double Entrada => Torneira.Vazao;
     }
     public class Caixa

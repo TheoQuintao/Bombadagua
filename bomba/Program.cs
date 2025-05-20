@@ -3,7 +3,7 @@ using Layout;
 
 
 Torneira.Vazao = 4;
-Bomba.Vazao = 3;
+Bomba_Main.Vazao = 3;
 Caixa.NivelAtual = 100;
 Reservatorio.NivelAtual = 100;
 Caixa.Saida = 2;
@@ -14,7 +14,7 @@ while (true)
 {
     Thread.Sleep(1000);
     Console.Clear();
-    bool ? bombaEstado = Bomba.Estado(Caixa.SensorA, Caixa.SensorB);
+    bool ? bombaEstado = Bomba_Main.Estado(Caixa.SensorA, Caixa.SensorB);
     bool ? torneiraEstado = Torneira.Estado(Reservatorio.SensorA, Reservatorio.SensorB);
     Formatação.Cor(ConsoleColor.Yellow);
     Formatação.ImprimirCabecalho(txt);
@@ -59,7 +59,7 @@ while (true)
         Formatação.Cor(ConsoleColor.Green);
         Console.WriteLine("Bomba Ligada");
         Formatação.Cor(ConsoleColor.White);
-        Reservatorio.NivelAtual -= Bomba.Vazao;
+        Reservatorio.NivelAtual -= Bomba_Main.Vazao;
         Caixa.NivelAtual += Reservatorio.Saida;
     }
     else
