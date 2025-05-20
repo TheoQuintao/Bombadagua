@@ -1614,11 +1614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\João\\Bombadagua\\bomba\\bomba.csproj",
+      "projectUniqueName": "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj",
       "projectName": "bomba",
-      "projectPath": "D:\\João\\Bombadagua\\bomba\\bomba.csproj",
+      "projectPath": "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj",
       "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
-      "outputPath": "D:\\João\\Bombadagua\\bomba\\obj\\",
+      "outputPath": "D:\\João Paulo\\Bombadagua\\bomba\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1671,7 +1671,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
