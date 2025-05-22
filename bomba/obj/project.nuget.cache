@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Vd4Cpa4+Syg=",
+  "dgSpecHash": "i4nmIDVD18w=",
   "success": true,
   "projectFilePath": "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj",
   "expectedPackageFiles": [
@@ -34,12 +34,5 @@
     "C:\\Users\\Alunos\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
     "C:\\Users\\Alunos\\.nuget\\packages\\zstdsharp.port\\0.8.5\\zstdsharp.port.0.8.5.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache D:\\João Paulo\\Bombadagua\\bomba\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

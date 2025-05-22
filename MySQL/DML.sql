@@ -21,7 +21,7 @@ USE `Banco_Bomba` ;
 -- Table `mydb`.`Bomba`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Banco_Bomba`.`Bomba` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
+  `ID` INT NOT NULL ,
   `Vazao` INT NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE INDEX `ID_UNIQUE` (`ID` ASC) VISIBLE)
@@ -32,7 +32,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Torneira`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Banco_Bomba`.`Torneira` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
+  `ID` INT NOT NULL ,
   `Torneira` INT NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE INDEX `ID_UNIQUE` (`ID` ASC) VISIBLE)
@@ -43,7 +43,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Caixa`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Banco_Bomba`.`Caixa` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
+  `ID` INT NOT NULL ,
   `Capacidade` INT NULL,
   `Sensor_SUP` TINYINT NOT NULL,
   `Sensor_INF` TINYINT NOT NULL,
@@ -63,7 +63,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Reservatorio`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Banco_Bomba`.`Reservatorio` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
+  `ID` INT NOT NULL ,
   `Ind_Reservatorio` VARCHAR(255) NULL,
   `Capacidade` INT NOT NULL,
   `Sensor_SUP` TINYINT NOT NULL,
@@ -127,7 +127,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`Media_Temp`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Banco_Bomba`.`Media_Temp` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
+  `ID` INT NOT NULL auto_increment,
   `Media_Fun_Bomba` INT NOT NULL,
   `Media_Fun_Torneira` INT NOT NULL,
   `Periodo_Funcionamento_Bomba_ID` INT NOT NULL,
@@ -151,3 +151,5 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+

@@ -2,7 +2,7 @@ using Bomba_Name.Models;
 using MySql.Data.MySqlClient;
 namespace Bomba_Name.Repositories
 {
-    public class BombaRepository
+    public class ReservatorioRepository
     {
         public void AddBomba(Bomba bomba)
         {
@@ -10,7 +10,7 @@ namespace Bomba_Name.Repositories
             {
                 connection.Open();
 
-                var query = @"INSERT INTO Bomba 
+                var query = @"INSERT INTO bombas 
                      (ID, Vazao) 
                      VALUES (@ID, @Vazao)";
 
