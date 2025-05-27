@@ -4,7 +4,7 @@ namespace Bomba_Name.Repositories
 {
     public class CaixaRepository
     {
-        public void AddCaixa(Caixa caixa, Bomba bomba)
+        public void AddCaixa(Caixa caixa)
         {
             using (var connection = DatabaseConnection.GetConnection())
             {
@@ -21,7 +21,7 @@ namespace Bomba_Name.Repositories
                     cmd.Parameters.AddWithValue("@Capacidade", caixa.Capacidade);
                     cmd.Parameters.AddWithValue("@Sensor_SUP", caixa.Sensor_SUP);
                     cmd.Parameters.AddWithValue("@Sensor_INF", caixa.Sensor_INF);
-                    cmd.Parameters.AddWithValue("@Bomba_ID", bomba.ID);
+                    cmd.Parameters.AddWithValue("@Bomba_ID", caixa.Bomba_ID.ID);
                     cmd.Parameters.AddWithValue("@Ind_Caixa", caixa.Ind_Caixa);
 
                     cmd.ExecuteNonQuery();

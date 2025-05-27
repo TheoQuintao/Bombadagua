@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj": {}
+    "D:\\atividades\\João_Paulo\\Bombadagua\\bomba\\bomba.csproj": {}
   },
   "projects": {
-    "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj": {
+    "D:\\atividades\\João_Paulo\\Bombadagua\\bomba\\bomba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj",
+        "projectUniqueName": "D:\\atividades\\João_Paulo\\Bombadagua\\bomba\\bomba.csproj",
         "projectName": "bomba",
-        "projectPath": "D:\\João Paulo\\Bombadagua\\bomba\\bomba.csproj",
-        "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
-        "outputPath": "D:\\João Paulo\\Bombadagua\\bomba\\obj\\",
+        "projectPath": "D:\\atividades\\João_Paulo\\Bombadagua\\bomba\\bomba.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "D:\\atividades\\João_Paulo\\Bombadagua\\bomba\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

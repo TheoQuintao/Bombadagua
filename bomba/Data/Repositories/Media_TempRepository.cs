@@ -4,7 +4,7 @@ namespace Bomba_Name.Repositories
 {
     public class Media_TempRepository
     {
-        public void AddMedia_Temp(Media_Temp media, Periodo_Funcionamento_Torneira PFT, Periodo_Funcionamento_Bomba PFB)
+        public void AddMedia_Temp(Media_Temp media)
         {
             using (var connection = DatabaseConnection.GetConnection())
             {
@@ -19,8 +19,8 @@ namespace Bomba_Name.Repositories
 
                     cmd.Parameters.AddWithValue("@Media_Fun_Bomba", media.Media_Fun_Bomba);
                     cmd.Parameters.AddWithValue("@Media_Fun_Torneira", media.Media_Fun_Torneira);
-                    cmd.Parameters.AddWithValue("@Periodo_Funcionamento_Bomba_ID", PFB.ID);
-                    cmd.Parameters.AddWithValue("@Periodo_Funcionamento_Torneira_ID", PFT.ID);
+                    cmd.Parameters.AddWithValue("@Periodo_Funcionamento_Bomba_ID", media.Periodo_Funcionamento_Bomba_ID.ID);
+                    cmd.Parameters.AddWithValue("@Periodo_Funcionamento_Torneira_ID", media.Periodo_Funcionamento_Torneira_ID.ID);
 
                     cmd.ExecuteNonQuery();
                     if (cmd.LastInsertedId != 0)
